@@ -1,40 +1,113 @@
-<section id="menu" class="py-16 bg-amber-50/50">
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ఇబ్రహీం హోటల్ | Ibrahim Hotel - Chicken Dum Biryani & Fast Foods</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', 'Noto Sans Telugu', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xs text-red-600 font-bold tracking-wider">పి. ఇబ్రహీం</span>
+                <a href="#" class="text-2xl font-bold text-red-700 tracking-wide">ఇబ్రహీం హోటల్</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#home" class="hover:text-red-600 transition">Home</a>
+                <a href="#menu" class="hover:text-red-600 transition">Our Menu</a>
+                <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+            </nav>
+            <a href="tel:9440460057" class="bg-red-600 text-white px-5 py-2 rounded-full font-bold hover:bg-red-700 transition shadow-md flex items-center gap-2">
+                📞 Call: 9440460057
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-gradient-to-r from-red-700 to-amber-600 text-white py-20 md:py-28 overflow-hidden">
+        <div class="container mx-auto px-6 text-center max-w-3xl relative z-10">
+            <span class="bg-yellow-400 text-red-900 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider">Authentic Taste</span>
+            <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-2 text-white">ఇబ్రహీం హోటల్</h1>
+            <p class="text-xl md:text-2xl font-semibold text-yellow-300 mb-6">చికెన్ దమ్ బిరియాని & ఫాస్ట్ ఫుడ్స్</p>
+            <p class="text-base md:text-lg mb-8 text-stone-100 opacity-90">Experience the finest aromatic Chicken Dum Biryani and delicious fast foods made fresh daily.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-yellow-400 text-stone-900 px-8 py-3 rounded-md font-bold text-lg hover:bg-yellow-300 transition shadow-lg">View Menu</a>
+                <a href="tel:9440460057" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-white hover:text-stone-900 transition">Order: 9440460057</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-16 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="serif-font text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Our Signature Dishes</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Our Specialties</h2>
+                <div class="h-1 w-20 bg-red-600 mx-auto mt-3"></div>
+            </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=80" alt="Special Mutton Biryani" class="h-48 w-full object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold text-xl">Special Mutton Biryani</h3>
-                            <span class="text-amber-600 font-bold text-lg">₹380</span>
-                        </div>
-                        <p class="text-stone-600 text-sm mb-4">Tender mutton pieces layered with fragrant basmati rice and saffron.</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-md border border-stone-200/60 hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=500&q=80" alt="Chicken Dum Biryani" class="h-48 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-stone-900 mb-1">Chicken Dum Biryani</h3>
+                        <p class="text-xs text-red-600 font-bold mb-3">చికెన్ దమ్ బిరియాని</p>
+                        <p class="text-stone-600 text-sm">Perfectly layered aromatic basmati rice served with juicy masala chicken.</p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=500&q=80" alt="Hyderabadi Chicken Biryani" class="h-48 w-full object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold text-xl">Chicken Dum Biryani</h3>
-                            <span class="text-amber-600 font-bold text-lg">₹280</span>
-                        </div>
-                        <p class="text-stone-600 text-sm mb-4">Classic spicy chicken biryani cooked on low flame for hours.</p>
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-md border border-stone-200/60 hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500&q=80" alt="Chicken Noodles" class="h-48 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-stone-900 mb-1">Chicken Fast Foods</h3>
+                        <p class="text-xs text-red-600 font-bold mb-3">ఫాస్ట్ ఫుడ్స్ (Noodles/Fried Rice)</p>
+                        <p class="text-stone-600 text-sm">Wok-tossed spicy noodles and fried rice loaded with proteins and veggies.</p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=500&q=80" alt="Veg Paneer Biryani" class="h-48 w-full object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold text-xl">Royal Paneer Biryani</h3>
-                            <span class="text-amber-600 font-bold text-lg">₹240</span>
-                        </div>
-                        <p class="text-stone-600 text-sm mb-4">Fresh cottage cheese cubes marinated in spices and layered with rice.</p>
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-md border border-stone-200/60 hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=500&q=80" alt="Chicken Fry Leg Piece" class="h-48 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-stone-900 mb-1">Chicken Fry / Leg Pieces</h3>
+                        <p class="text-xs text-red-600 font-bold mb-3">చికెన్ ఫ్రై</p>
+                        <p class="text-stone-600 text-sm">Crispy, deeply marinated spicy chicken leg pieces cooked to a rich golden brown.</p>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-md border border-stone-200/60 hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=500&q=80" alt="Parotta" class="h-48 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-stone-900 mb-1">Malabar Parotta</h3>
+                        <p class="text-xs text-red-600 font-bold mb-3">పరోటా</p>
+                        <p class="text-stone-600 text-sm">Multi-layered flaky, soft flatbread served alongside delicious savory gravy.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer id="contact" class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 border-b border-stone-800 pb-8">
+            <div>
+                <h3 class="text-xl font-bold text-yellow-400 mb-2">ఇబ్రహీం హోటల్ (Ibrahim Hotel)</h3>
+                <p class="text-sm text-stone-400 max-w-sm">Enjoy our authentic menu crafted with rich ingredients. Serving you fresh food hot out of the kitchen daily.</p>
+            </div>
+            <div class="flex flex-col md:items-end">
+                <h3 class="text-xl font-bold text-yellow-400 mb-2">Order & Inquiries</h3>
+                <a href="tel:9440460057" class="text-2xl font-bold text-white hover:text-yellow-300 transition">📞 9440460057</a>
+                <p class="text-xs text-stone-400 mt-2">Call directly to place takeaway or catering orders.</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-6 text-center text-xs text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 ఇబ్రహీం హోటల్. All rights reserved.</p>
+            <p class="text-stone-600">Hosted via pibrahem.github.io</p>
+        </div>
+    </footer>
+
+</body>
+</html>
