@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ఇబ్రహీం హోటల్ (Ibrahim Hotel) offers the best authentic Chicken Dum Biryani, spicy Fast Foods, Chicken Leg Fry, Fried Rice, and soft Parotta in Rapur. Call 9440460057 for orders and party catering.">
-    <meta name="keywords" content="Ibrahim Hotel Rapur, ఇబ్రహీం హోటల్ రాపూరు, Ibrahim Hotel, ఇబ్రహీం హోటల్, Chicken Dum Biryani Rapur, చికెన్ దమ్ బిరియాని, fast food center Rapur, chicken noodles, chicken fry, parotta, chapathi, fried rice, best restaurants in Rapur, food delivery near me Rapur">
-    <meta name="author" content="Ibrahim Hotel">
     <title>ఇబ్రహీం హోటల్ | Ibrahim Hotel - Chicken Dum Biryani & Fast Foods</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,15 +39,119 @@
         </a>
     </div>
 
-    <section id="home" class="relative bg-gradient-to-r from-red-700 to-amber-600 text-white py-20 md:py-28 overflow-hidden">
-        <div class="container mx-auto px-6 text-center max-w-3xl relative z-10">
-            <span class="bg-yellow-400 text-red-900 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider">Authentic Taste of Rapur</span>
-            <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-2 text-white">ఇబ్రహీం హోటల్</h1>
-            <p class="text-xl md:text-2xl font-semibold text-yellow-300 mb-6">చికెన్ దమ్ బిరియాని & ఫాస్ట్ ఫుడ్స్ — రాపూరు</p>
-            <p class="text-base md:text-lg mb-8 text-stone-100 opacity-90">Experience the finest aromatic Chicken Dum Biryani and delicious fast foods made fresh daily in Rapur.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#menu" class="bg-yellow-400 text-stone-900 px-8 py-3 rounded-md font-bold text-lg hover:bg-yellow-300 transition shadow-lg">View Menu</a>
-                <a href="tel:9440460057" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-white hover:text-stone-900 transition">Order: 9440460057</a>
+   <!-- Hero / Home Block with Bright Street-Side Hotel Background -->
+    <section id="home" class="relative bg-stone-900 py-20 md:py-28 overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Bright Street-Side Food Stall Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="FAMILY.png" alt="Street Side Food Stall" class="w-full h-full object-cover opacity-50 brightness-110 contrast-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-stone-950/50"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Side: Welcome Text -->
+            <div class="text-center lg:text-left text-white max-w-xl mx-auto lg:mx-0 drop-shadow-md">
+                <span class="bg-amber-400 text-stone-950 text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">Authentic Taste of Rapur</span>
+                <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-2 tracking-wide drop-shadow-lg">ఇబ్రహీం హోటల్</h1>
+                <p class="text-xl md:text-2xl font-semibold text-yellow-300 mb-6 drop-shadow">Ibrahim Hotel & Fast Foods</p>
+                <p class="text-base md:text-lg mb-8 text-stone-100 opacity-95 leading-relaxed font-medium">Experience Rapur's finest aromatic Chicken Dum Biryani, crispy fried chicken, and delicious wok-tossed fast foods made fresh every day right on the street side.</p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#menu" class="bg-red-600 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-red-700 transition shadow-lg text-center">View Full Menu</a>
+                    <a href="tel:9440460057" class="bg-stone-900/90 border-2 border-white text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-white hover:text-stone-950 transition text-center backdrop-blur-sm">📞 Call: 9440460057</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Graphic 3D Flip Boxes Layout -->
+            <div class="grid grid-cols-2 gap-4 max-w-md mx-auto w-full">
+                
+                <!-- Flip Box 1: Biryani -->
+                <div class="group h-40 w-full [perspective:1000px]">
+                    <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <!-- Front Face -->
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-red-700/90 backdrop-blur-md text-white rounded-2xl p-4 border border-red-500/40 backface-hidden [backface-visibility:hidden]">
+                            <span class="text-3xl mb-2">🍛</span>
+                            <h3 class="font-bold text-base text-center">Biryani Special</h3>
+                            <p class="text-[10px] text-yellow-300 font-bold mt-1">చికెన్ బిరియాని</p>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=300&q=80" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                            <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
+                                <span class="text-xs font-bold text-yellow-400">Dum Biryani</span>
+                                <p class="text-[11px] text-stone-300 mt-1">
+								 <ul><b>Single</b> </ul><br>
+								 <ul><b>Family</b> </ul><br>
+								 <ul><b>Jumbo</b> </ul><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Box 2: Chicken Fry -->
+                <div class="group h-40 w-full [perspective:1000px]">
+                    <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <!-- Front Face -->
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-amber-600/90 backdrop-blur-md text-white rounded-2xl p-4 border border-amber-500/40 backface-hidden [backface-visibility:hidden]">
+                            <span class="text-3xl mb-2">🍗</span>
+                            <h3 class="font-bold text-base text-center">Chicken Fry</h3>
+                            <p class="text-[10px] text-yellow-200 font-bold mt-1">చికెన్ ఫ్రై</p>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
+                            <img src="Chicken-Leg-Fry.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                            <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
+                                <span class="text-xs font-bold text-amber-400">Crispy Leg Pieces</span>
+                                <p class="text-[11px] text-stone-300 mt-1"><ul><b>Chiken Pakoda </b></ul><br>
+								<ul> <b> Chiken Leg Piece</b></ul><br>
+								<ul> <b> Chiken Liver</b> </ul><br>
+								</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Box 3: Fast Foods -->
+                <div class="group h-40 w-full [perspective:1000px]">
+                    <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <!-- Front Face -->
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-stone-800/95 backdrop-blur-md text-white rounded-2xl p-4 border border-stone-600/50 backface-hidden [backface-visibility:hidden]">
+                            <span class="text-3xl mb-2">🥢</span>
+                            <h3 class="font-bold text-base text-center">Fast Foods</h3>
+                            <p class="text-[10px] text-red-400 font-bold mt-1">నూడుల్స్ / రైస్</p>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
+                            <img src="https://img.freepik.com/premium-photo/veg-hakka-noodles-popular-oriental-dish-made-with-noodles-vegetables-served-rustic-wooden-background-selective-focus_726363-1113.jpg?w=500" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                            <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
+                                <span class="text-xs font-bold text-yellow-400">Noodles & Fried Rice</span>
+                                <p class="text-[11px] text-stone-300 mt-1"> <ul><b>Egg Fried Rice</b></ul><br>
+								<ul><b>Chicken Fried Rice</b></ul><br>
+								<ul><b>Noodles</b></ul><br>
+								</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Box 4: Roti Specialties -->
+                <div class="group h-40 w-full [perspective:1000px]">
+                    <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <!-- Front Face -->
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-red-600/90 backdrop-blur-md text-white rounded-2xl p-4 border border-red-400/40 backface-hidden [backface-visibility:hidden]">
+                            <span class="text-3xl mb-2">🫓</span>
+                            <h3 class="font-bold text-base text-center">Parotta / Chapathi</h3>
+                            <p class="text-[10px] text-yellow-300 font-bold mt-1">పరోటా / చపాతీ</p>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
+                            <img src="https://i.ytimg.com/vi/R6JPWnpRx14/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                            <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
+                                <span class="text-xs font-bold text-red-400">Soft Layers</span>
+                                <p class="text-[11px] text-stone-300 mt-1">Flaky parottas with delicious savory gravy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -64,7 +165,7 @@
             
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-stone-50 rounded-xl overflow-hidden shadow-md border border-stone-200/60 hover:shadow-xl transition">
-                    <img src="dum biryani.jpg" alt="Chicken Dum Biryani" class="h-48 w-full object-cover">
+                    <img src="https://i.ytimg.com/vi/-EztYQE7PoA/maxresdefault.jpg" alt="Chicken Dum Biryani" class="h-48 w-full object-cover">
                     <div class="p-5">
                         <h3 class="font-bold text-lg text-stone-900 mb-1">Chicken Dum Biryani</h3>
                         <p class="text-xs text-red-600 font-bold mb-3">చికెన్ దమ్ బిరియాని</p>
@@ -91,7 +192,7 @@
                 </div>
 
                 <div class="bg-stone-50 rounded-xl overflow-hidden shadow-md border border-stone-200/60 hover:shadow-xl transition">
-                    <img src="chapati.jpg" alt="Chapathi" class="h-48 w-full object-cover">
+                    <img src="https://pastrymachinery.com/wp-content/uploads/2021/10/21-chapati-bread-sample-1024x1024.jpg" alt="Chapathi" class="h-48 w-full object-cover">
                     <div class="p-5">
                         <h3 class="font-bold text-lg text-stone-900 mb-1">Chapati</h3>
                         <p class="text-xs text-red-600 font-bold mb-3">చపాతీ</p>
@@ -129,7 +230,7 @@
             
             <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <div class="bg-white p-6 rounded-2xl border-2 border-dashed border-red-300 flex justify-between items-center shadow-sm">
-                    <div>
+                <!--    <div>
                         <h3 class="font-bold text-lg text-stone-900">Family Biryani Combo Pack</h3>
                         <p class="text-xs text-stone-500 mt-1">1 Chicken Dum Biryani + 1 Full Chicken Fry + Gravy & Raita</p>
                         <span class="inline-block mt-3 bg-green-100 text-green-800 text-xs font-bold px-2 py-0.5 rounded">Most Popular</span>
@@ -137,7 +238,7 @@
                     <div class="text-right ml-4">
                         <span class="text-stone-400 line-through text-sm block">₹450</span>
                         <span class="text-xl font-bold text-red-600 whitespace-nowrap">₹399 Only</span>
-                    </div>
+                    </div> 
                 </div>
 
                 <div class="bg-white p-6 rounded-2xl border-2 border-dashed border-amber-400 flex justify-between items-center shadow-sm">
@@ -148,8 +249,12 @@
                     <div class="text-right ml-4">
                         <span class="text-stone-400 line-through text-sm block">₹280</span>
                         <span class="text-xl font-bold text-amber-600 whitespace-nowrap">₹230 Only</span>
-                    </div>
-                </div>
+                    </div>--><center>
+					<div class="text-right ml-4">
+                        <span class="text-stone-400 line-through text-sm block"> Closed</span>
+                        <span class="text-xl font-bold text-amber-600 whitespace-nowrap">Coming Soon.</span>
+                    </div> </center>
+                </div> 
             </div>
         </div>
     </section>
