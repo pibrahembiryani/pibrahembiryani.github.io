@@ -39,21 +39,52 @@
         </a>
     </div>
 
-   <!-- Hero / Home Block with Bright Street-Side Hotel Background -->
-    <section id="home" class="relative bg-stone-900 py-20 md:py-28 overflow-hidden min-h-[90vh] flex items-center">
-        <!-- Bright Street-Side Food Stall Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="FAMILY.png" alt="Street Side Food Stall" class="w-full h-full object-cover opacity-50 brightness-110 contrast-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-stone-950/50"></div>
+   <!-- Custom CSS for the Infinite Seamless Right-to-Left Loop -->
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        /* Pause movement on desktop hover so users can view details comfortably */
+        .hover-pause:hover .animate-marquee {
+            animation-play-state: paused;
+        }
+    </style>
+
+    <!-- Hero / Home Block with Infinite Moving Gallery Background -->
+    <section id="home" class="relative bg-stone-900 py-16 md:py-24 overflow-hidden min-h-[90vh] flex items-center">
+        
+        <!-- Moving Background Wrapper (Right to Left) -->
+        <div class="absolute inset-0 z-0 flex overflow-hidden opacity-150 select-none hover-pause">
+            <!-- First Set of Images -->
+            <div class="flex space-x-4 min-w-full shrink-0 items-center justify-around animate-marquee px-2">
+                <img src="FAMILY.png" alt="Family Dining" class="h-[75vh] w-[500px] object-cover rounded-3xl shadow-2xl border border-white/10">
+                <img src="friends.png" alt="Friends Dining" class="h-[75vh] w-[500px] object-cover rounded-3xl shadow-2xl border border-white/10">
+                <img src="TEENS.png" alt="Teens Dining" class="h-[75vh] w-[500px] object-cover rounded-3xl shadow-2xl border border-white/10">
+            </div>
+            <!-- Duplicated Set for Seamless, Infinite Loop Inversion -->
+            <div class="flex space-x-4 min-w-full shrink-0 items-center justify-around animate-marquee px-2" aria-hidden="true">
+                <img src="FAMILY.png" alt="Family Dining" class="h-[75vh] w-[500px] object-cover rounded-3xl shadow-2xl border border-white/10">
+                <img src="friends.png" alt="Friends Dining" class="h-[75vh] w-[500px] object-cover rounded-3xl shadow-2xl border border-white/10">
+                <img src="TEENS.png" alt="Teens Dining" class="h-[75vh] w-[500px] object-cover rounded-3xl shadow-2xl border border-white/10">
+            </div>
         </div>
 
+        <!-- Dark Gradient Overlays to Protect Text Contrast -->
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-900/80 to-stone-950/40 z-5"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-stone-950 z-5"></div>
+
+        <!-- Foreground Content Block -->
         <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <!-- Left Side: Welcome Text -->
             <div class="text-center lg:text-left text-white max-w-xl mx-auto lg:mx-0 drop-shadow-md">
                 <span class="bg-amber-400 text-stone-950 text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">Authentic Taste of Rapur</span>
                 <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-2 tracking-wide drop-shadow-lg">ఇబ్రహీం హోటల్</h1>
                 <p class="text-xl md:text-2xl font-semibold text-yellow-300 mb-6 drop-shadow">Ibrahim Hotel & Fast Foods</p>
-                <p class="text-base md:text-lg mb-8 text-stone-100 opacity-95 leading-relaxed font-medium">Experience Rapur's finest aromatic Chicken Dum Biryani, crispy fried chicken, and delicious wok-tossed fast foods made fresh every day right on the street side.</p>
+                <p class="text-base md:text-lg mb-8 text-stone-100 opacity-95 leading-relaxed font-medium">Whether gathered with family, celebrating with old friends, or hanging out after class, share Rapur's favorite aromatic Biryani and savory fast food favorites.</p>
                 <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                     <a href="#menu" class="bg-red-600 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-red-700 transition shadow-lg text-center">View Full Menu</a>
                     <a href="tel:9440460057" class="bg-stone-900/90 border-2 border-white text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-white hover:text-stone-950 transition text-center backdrop-blur-sm">📞 Call: 9440460057</a>
@@ -62,23 +93,19 @@
 
             <!-- Right Side: Graphic 3D Flip Boxes Layout -->
             <div class="grid grid-cols-2 gap-4 max-w-md mx-auto w-full">
-                
                 <!-- Flip Box 1: Biryani -->
                 <div class="group h-40 w-full [perspective:1000px]">
                     <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <!-- Front Face -->
-                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-red-700/90 backdrop-blur-md text-white rounded-2xl p-4 border border-red-500/40 backface-hidden [backface-visibility:hidden]">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-red-700/90 backdrop-blur-md text-white rounded-2xl p-4 border border-red-500/40 [backface-visibility:hidden]">
                             <span class="text-3xl mb-2">🍛</span>
                             <h3 class="font-bold text-base text-center">Biryani Special</h3>
                             <p class="text-[10px] text-yellow-300 font-bold mt-1">చికెన్ బిరియాని</p>
                         </div>
-                        <!-- Back Face -->
-                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=300&q=80" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=300&q=80" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="Biryani close up">
                             <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
                                 <span class="text-xs font-bold text-yellow-400">Dum Biryani</span>
-                                <p class="text-[11px] text-stone-300 mt-1">
-								 <ul><b>Single</b> </ul><br>
+                                <p class="text-[11px] text-stone-300 mt-1"> <ul><b>Single</b> </ul><br>
 								 <ul><b>Family</b> </ul><br>
 								 <ul><b>Jumbo</b> </ul><br></p>
                             </div>
@@ -89,21 +116,18 @@
                 <!-- Flip Box 2: Chicken Fry -->
                 <div class="group h-40 w-full [perspective:1000px]">
                     <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <!-- Front Face -->
-                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-amber-600/90 backdrop-blur-md text-white rounded-2xl p-4 border border-amber-500/40 backface-hidden [backface-visibility:hidden]">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-amber-600/90 backdrop-blur-md text-white rounded-2xl p-4 border border-amber-500/40 [backface-visibility:hidden]">
                             <span class="text-3xl mb-2">🍗</span>
                             <h3 class="font-bold text-base text-center">Chicken Fry</h3>
                             <p class="text-[10px] text-yellow-200 font-bold mt-1">చికెన్ ఫ్రై</p>
                         </div>
-                        <!-- Back Face -->
-                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
-                            <img src="Chicken-Leg-Fry.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
+                            <img src="Chicken-Leg-Fry.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="Leg Fry">
                             <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
                                 <span class="text-xs font-bold text-amber-400">Crispy Leg Pieces</span>
                                 <p class="text-[11px] text-stone-300 mt-1"><ul><b>Chiken Pakoda </b></ul><br>
 								<ul> <b> Chiken Leg Piece</b></ul><br>
-								<ul> <b> Chiken Liver</b> </ul><br>
-								</p>
+								<ul> <b> Chiken Liver</b> </ul><br></p>
                             </div>
                         </div>
                     </div>
@@ -112,21 +136,18 @@
                 <!-- Flip Box 3: Fast Foods -->
                 <div class="group h-40 w-full [perspective:1000px]">
                     <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <!-- Front Face -->
-                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-stone-800/95 backdrop-blur-md text-white rounded-2xl p-4 border border-stone-600/50 backface-hidden [backface-visibility:hidden]">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-stone-800/95 backdrop-blur-md text-white rounded-2xl p-4 border border-stone-600/50 [backface-visibility:hidden]">
                             <span class="text-3xl mb-2">🥢</span>
                             <h3 class="font-bold text-base text-center">Fast Foods</h3>
                             <p class="text-[10px] text-red-400 font-bold mt-1">నూడుల్స్ / రైస్</p>
                         </div>
-                        <!-- Back Face -->
-                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
-                            <img src="https://img.freepik.com/premium-photo/veg-hakka-noodles-popular-oriental-dish-made-with-noodles-vegetables-served-rustic-wooden-background-selective-focus_726363-1113.jpg?w=500" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
+                            <img src="https://img.freepik.com/premium-photo/veg-hakka-noodles-popular-oriental-dish-made-with-noodles-vegetables-served-rustic-wooden-background-selective-focus_726363-1113.jpg?w=500" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="Noodles">
                             <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
                                 <span class="text-xs font-bold text-yellow-400">Noodles & Fried Rice</span>
-                                <p class="text-[11px] text-stone-300 mt-1"> <ul><b>Egg Fried Rice</b></ul><br>
+                                <p class="text-[11px] text-stone-300 mt-1"><ul><b>Egg Fried Rice</b></ul><br>
 								<ul><b>Chicken Fried Rice</b></ul><br>
-								<ul><b>Noodles</b></ul><br>
-								</p>
+								<ul><b>Noodles</b></ul><br></p>
                             </div>
                         </div>
                     </div>
@@ -135,15 +156,13 @@
                 <!-- Flip Box 4: Roti Specialties -->
                 <div class="group h-40 w-full [perspective:1000px]">
                     <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <!-- Front Face -->
-                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-red-600/90 backdrop-blur-md text-white rounded-2xl p-4 border border-red-400/40 backface-hidden [backface-visibility:hidden]">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-red-600/90 backdrop-blur-md text-white rounded-2xl p-4 border border-red-400/40 [backface-visibility:hidden]">
                             <span class="text-3xl mb-2">🫓</span>
                             <h3 class="font-bold text-base text-center">Parotta / Chapathi</h3>
                             <p class="text-[10px] text-yellow-300 font-bold mt-1">పరోటా / చపాతీ</p>
                         </div>
-                        <!-- Back Face -->
-                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden] overflow-hidden">
-                            <img src="https://i.ytimg.com/vi/R6JPWnpRx14/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 h-full w-full rounded-2xl bg-stone-900 p-4 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
+                            <img src="https://i.ytimg.com/vi/R6JPWnpRx14/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50" alt="Parotta">
                             <div class="absolute inset-0 bg-stone-950/70 flex flex-col justify-center items-center p-2">
                                 <span class="text-xs font-bold text-red-400">Soft Layers</span>
                                 <p class="text-[11px] text-stone-300 mt-1">Flaky parottas with delicious savory gravy.</p>
@@ -151,7 +170,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
